@@ -7,4 +7,16 @@ app.get('/',(req,res)=>{
     res.send("Inicio de mi servidor");
 })
 
+app.get('/endpointsenior',(req,res)=>{
+    res.send("Endpoint hecho por Mau Senior");
+})
+
+app.get('/endpointjunior',(req,res)=>{
+    res.send("Endpoint hecho por Mau JR")
+})
+
+app.get('/nuevoEndpoint',(req,res)=>{
+    res.send("otro endpoint");
+})
+
 app.listen(8080,()=>console.log("Listening"))
